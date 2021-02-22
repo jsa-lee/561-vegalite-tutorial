@@ -35,7 +35,13 @@ var barChart = {
     x: {field: "popularity", 
         type: "quantitative", 
         title: "Popularity score", 
-        scale: {domain: [0, 70]}}
+        scale: {domain: [0, 70]}},
+    color: {
+      field: "popularity",
+      type: "ordinal",
+      scale: {scheme: "redpurple"},
+      legend: null
+    }
   }
 };
 
